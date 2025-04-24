@@ -1,12 +1,15 @@
-# React + Vite
+# 🐱 Cat Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that fetches and displays a random cat image using the [Cataas](https://cataas.com) API.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- One-click to get a new cat pic
+- Images are always fresh (no caching issues)
+- Styled with Tailwind CSS for a clean UI
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- [Cataas](https://cataas.com) (Cat-as-a-Service API)
