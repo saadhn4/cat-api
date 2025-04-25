@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const App = () => {
   const [cat, setCat] = useState(null);
+  const [clicked, setClicked] = useState(false);
 
   const getCat = async () => {
     setCat(`https://cataas.com/cat?timestamp=${Date.now()}`);
@@ -11,10 +12,17 @@ const App = () => {
       <div className="text-center">
         <h1 className="text-3xl mb-5">Cat Generator</h1>
         <button
-          className="bg-green-500 text-white font-bold py-2 px-3 rounded-lg mb-8 cursor-pointer"
-          onClick={getCat}
+          className={
+            clicked
+              ? `bg-green-500 text-white font-bold py-2 px-3 rounded-lg mb-8 cursor-pointer text-2xl`
+              : `bg-green-500 text-white font-bold py-2 px-3 rounded-lg mb-8 cursor-pointer`
+          }
+          onClick={() => {
+            getCat();
+            setClicked(true);
+          }}
         >
-          Get cat pic
+          {clicked ? "🔄️" : "Get cat pic"}
         </button>
         {cat ? (
           <img
