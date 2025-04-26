@@ -10,7 +10,7 @@ const App = () => {
         <h1 className="text-3xl mb-5">Cat Generator</h1>
         <button
           className={`bg-green-500 text-white font-bold py-2 px-3 rounded-lg mb-8 cursor-pointer ${
-            clicked ? "text-2xl" : ""
+            clicked && "text-2xl"
           }`}
           onClick={() => {
             setCat(`https://cataas.com/cat?timestamp=${Date.now()}`);
